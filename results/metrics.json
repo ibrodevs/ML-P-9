@@ -1,0 +1,46 @@
+{
+  "dataset": "make_moons",
+  "n_samples": 320,
+  "noise": 0.22,
+  "random_state": 42,
+  "train_size": 240,
+  "test_size": 80,
+  "models": {
+    "linear_C1": {
+      "kernel": "linear",
+      "C": 1,
+      "gamma": "scale",
+      "train_accuracy": 0.8833,
+      "test_accuracy": 0.8625,
+      "test_f1": 0.8608,
+      "n_support_vectors": 78
+    },
+    "rbf_C1": {
+      "kernel": "rbf",
+      "C": 1,
+      "gamma": "scale",
+      "train_accuracy": 0.9042,
+      "test_accuracy": 0.925,
+      "test_f1": 0.925,
+      "n_support_vectors": 72
+    },
+    "rbf_C005": {
+      "kernel": "rbf",
+      "C": 0.05,
+      "gamma": "scale",
+      "train_accuracy": 0.8875,
+      "test_accuracy": 0.875,
+      "test_f1": 0.875,
+      "n_support_vectors": 160
+    },
+    "rbf_C100": {
+      "kernel": "rbf",
+      "C": 100,
+      "gamma": "scale",
+      "train_accuracy": 0.9417,
+      "test_accuracy": 0.975,
+      "test_f1": 0.9744,
+      "n_support_vectors": 44
+    }
+  }
+}
